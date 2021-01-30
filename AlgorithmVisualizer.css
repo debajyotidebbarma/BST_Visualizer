@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 23, 2020, 12:10:36 AM
+    Author     : user
+*/
+.navbar {
+  background-color: rgb(175, 166, 175);
+  padding: 20px;
+  width: 100%;
+}
+#logo {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  position: relative;
+}
+#logo:hover {
+  color: green;
+}
+.selectbutton {
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: green;
+  position: relative;
+}
+
+footer {
+  background-color: rgb(175, 166, 175);
+  padding: 40px;
+  width: 100%;
+}
+
+.footer-buttons {
+  margin-right: 20px;
+  background-color: green;
+  float: right;
+  position: relative;
+}
+.footer-buttons:hover {
+  background-color: rgb(150, 216, 150);
+}
+.Tree-visualizing-area {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 450px;
+  background-color: rgb(175, 166, 175);
+  overflow: scroll;
+}
+
+.node-circle {
+  width: 100px;
+  height: 100px;
+  border: green solid 5px;
+  border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+}
+.traversed-value-area {
+  background-color: rgb(176, 197, 169);
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  overflow: scroll;
+}
+
+.traversed-value {
+  float: left;
+  margin-left: 5px;
+  color: green;
+}
+input {
+  width: 50px;
+}
+.value-buttons {
+  background-color: green;
+}
+.value-buttons:hover {
+  background-color: rgb(150, 216, 150);
+}
