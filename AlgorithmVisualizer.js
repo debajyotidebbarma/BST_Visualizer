@@ -808,10 +808,7 @@ insert_Value_button.addEventListener("click", function (e) {
     indicatorOn = false;
     document.querySelector(".traversing-circle").remove();
   }
-  if (onlyOnce) {
-    onlyOnce = false;
-    gotoview.scrollIntoView({ behavior: "smooth" });
-  }
+  
 
   NodeScreenPositionX = firstNodeScreenPositionX;
 
@@ -825,6 +822,11 @@ insert_Value_button.addEventListener("click", function (e) {
     BST.createNode(nodevalue);
   } else {
     alert(`Entered value is not an integer`);
+  }
+if (onlyOnce) {
+    onlyOnce = false;
+    gotoview=document.querySelector(".svg-circle");
+    gotoview.scrollIntoView({ behavior: "smooth" });
   }
   go_Traversing = false;
 
