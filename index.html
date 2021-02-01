@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>BST Visualizer</title>
+
+    <link
+      rel="stylesheet"
+      href="bootstrap/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="bootstrap/js/jquery-3.5.1.min.js"
+    ></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="AlgorithmVisualizer.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#"
+        ><div class="navbar-header" id="logo">
+          Binary Search Tree Visualizer
+        </div></a
+      >
+      <div style="float: right; margin-right: 20px; color: rgb(27, 97, 27)">
+        <ul>
+          <li>Note 1:- Arrange When Two Nodes overlaps</li>
+          <li>Note 2:- If on Mobile scroll a little left after first insert</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="traversed-value-area"></div>
+
+    <!-----Tree Drawing area---------------------------------------------------->
+    <div class="Tree-visualizing-area">
+      <svg
+        class="visualizing-area-svg"
+        style="background-color: rgb(175, 166, 175)"
+      >
+        <circle id="viewScroll" cx="39500" r="0"></circle>
+      </svg>
+    </div>
+
+    <!---------------------------------------------------------------------------------------->
+    <footer>
+      <div>
+        <input class="insert-node-value" />
+        <div class="btn btn-primary insert-button value-buttons">insert</div>
+        <input class="remove-node-value" />
+        <div class="btn btn-primary remove-button value-buttons">Remove</div>
+        <input class="search-node-value" />
+        <div class="btn btn-primary search-button value-buttons">Search</div>
+
+        <div class="btn btn-primary traverse-tree-Button footer-buttons">
+          Traverse
+        </div>
+        <div class="btn btn-primary Balance-tree-button footer-buttons">
+          Balance
+        </div>
+        <div class="btn btn-primary reverse-tree-button footer-buttons">
+          Invert
+        </div>
+        <div class="btn btn-primary findMin-button footer-buttons">
+          Find Min
+        </div>
+        <div class="btn btn-primary findMax-button footer-buttons">
+          Find Max
+        </div>
+        <div class="btn btn-primary arrange-button footer-buttons">Arrange</div>
+      </div>
+    </footer>
+
+    <script src="AlgorithmVisualizer.js"></script>
+  </body>
+</html>
